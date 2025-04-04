@@ -6,15 +6,20 @@
 //
 
 import SwiftUI
+import Intents
 
 @main
 struct POCAppIntentsApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .onAppear {
-                    print("Appeared!")
-                }
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                
+            }
+            .padding()
         }
     }
 }

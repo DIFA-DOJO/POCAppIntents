@@ -8,17 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5022775E2D93FE200033750C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5022775D2D93FE200033750C /* Intents.framework */; };
-		502277652D93FE200033750C /* MainAccountBalanceIntentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5022775B2D93FE200033750C /* MainAccountBalanceIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		502277632D93FE200033750C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5030A0832D8D9CD6005D67A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5022775A2D93FE200033750C;
-			remoteInfo = MainAccountBalanceIntentExtension;
-		};
 		509AC4542D94425E00AA57AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5030A0832D8D9CD6005D67A0 /* Project object */;
@@ -27,20 +19,6 @@
 			remoteInfo = POCAppIntents;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		502277662D93FE200033750C /* Embed Foundation Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				502277652D93FE200033750C /* MainAccountBalanceIntentExtension.appex in Embed Foundation Extensions */,
-			);
-			name = "Embed Foundation Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5022775B2D93FE200033750C /* MainAccountBalanceIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MainAccountBalanceIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,12 +155,10 @@
 				5030A0872D8D9CD6005D67A0 /* Sources */,
 				5030A0882D8D9CD6005D67A0 /* Frameworks */,
 				5030A0892D8D9CD6005D67A0 /* Resources */,
-				502277662D93FE200033750C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				502277642D93FE200033750C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5030A08D2D8D9CD6005D67A0 /* POCAppIntents */,
@@ -310,11 +286,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		502277642D93FE200033750C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5022775A2D93FE200033750C /* MainAccountBalanceIntentExtension */;
-			targetProxy = 502277632D93FE200033750C /* PBXContainerItemProxy */;
-		};
 		509AC4552D94425E00AA57AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5030A08A2D8D9CD6005D67A0 /* POCAppIntents */;
@@ -499,17 +470,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = POCAppIntents/POCAppIntentsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = POCAppIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wero;
+				INFOPLIST_KEY_NSSiriUsageDescription = Tototottot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,17 +503,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = POCAppIntents/POCAppIntentsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = POCAppIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Wero;
+				INFOPLIST_KEY_NSSiriUsageDescription = Tototottot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
