@@ -1,7 +1,7 @@
 import AppIntents
 import SwiftUI
 
-struct BankAccountBalanceIntent: AppIntent {
+struct AccountBalanceIntent: AppIntent {
     
     static var title: LocalizedStringResource = "Solde bancaire"
 

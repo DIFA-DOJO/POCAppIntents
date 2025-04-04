@@ -32,7 +32,7 @@ class ShortcutsProvider: AppShortcutsProvider {
         )
         
         AppShortcut(
-            intent: BankAccountBalanceIntent(),
+            intent: AccountBalanceIntent(),
             phrases: [
                 "Afficher mon solde bancaire \(.applicationName)",
                 "Combien j'ai sur mon compte \(.applicationName)",

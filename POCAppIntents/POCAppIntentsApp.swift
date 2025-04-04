@@ -1,18 +1,23 @@
 import SwiftUI
-import Intents
+import AppIntents
 
 @main
 struct POCAppIntentsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                
+            ScrollView {
+                VStack(spacing: 40) {
+                    ShortcutsLink()
+                    
+                    SiriTipView(intent: WeroTransferIntent())
+                    
+                    SiriTipView(intent: AccountBalanceIntent())
+                    
+                    SiriTipView(intent: AccountWeatherIntent())
+                }
+                .padding()
             }
-            .padding()
         }
     }
 }
