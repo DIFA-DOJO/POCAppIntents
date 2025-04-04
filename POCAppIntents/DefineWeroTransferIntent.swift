@@ -1,5 +1,21 @@
 import AppIntents
 import SwiftUI
+import Contacts
+
+//struct PerformWeroTransferIntent: AppIntent {
+//    let amount: Double
+//    let currency: Currency
+//    
+//    static var openAppWhenRun: Bool = true
+//    
+//    func perform() async throws -> some IntentResult {
+//        // 1. connect if needed
+//        
+//        // 2. perform the transfer
+//        
+//        return .result()
+//    }
+//}
 
 struct WeroTransferIntent: AppIntent {
     
@@ -7,7 +23,7 @@ struct WeroTransferIntent: AppIntent {
 
     static var description = IntentDescription("Send money to someone")
     
-    static var openAppWhenRun: Bool = false
+    static var openAppWhenRun: Bool = true
     
     @Parameter(title: "Amount")
     var amount: Double
@@ -15,19 +31,21 @@ struct WeroTransferIntent: AppIntent {
     @Parameter(title: "Currency", default: .euro)
     var currency: Currency
     
+    @Parameter(title: "Beneficiary", optionsProvider: BeneficiariesOptionsProvider())
+    var beneficiary: CNContact
+    
     @MainActor
-    func perform() async throws -> some IntentResult & ReturnsValue<Bool> & ProvidesDialog & ShowsSnippetView {
+    func perform() async throws -> some IntentResult & OpensIntent {
+        // Because `openAppWhenRun == true` the app is up and running…
+        // We just need to reroute user to the populated screen.
         
-        let view = Text("💸💸💸")
-            .font(.largeTitle)
-        
-        let dialog = IntentDialog(
-            full: "Yeah!",
-            supporting: "\(amount.formatted(.currency(code: currency.code))) sent to a random person…",
-            systemImageName: "dollarsign.circle.fill"
-        )
-        
-       return .result(value: true, dialog: dialog, view: view)
+        return .result(opensIntent: OpenURLIntent(URL(string: "wero://facebook.com")!))
+    }
+    
+    private struct BeneficiariesOptionsProvider: DynamicOptionsProvider {
+        func results() async throws -> [CNContact] {
+            []
+        }
     }
 }
 

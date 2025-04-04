@@ -6,11 +6,57 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5022775E2D93FE200033750C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5022775D2D93FE200033750C /* Intents.framework */; };
+		502277652D93FE200033750C /* MainAccountBalanceIntentExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5022775B2D93FE200033750C /* MainAccountBalanceIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		502277632D93FE200033750C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5030A0832D8D9CD6005D67A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5022775A2D93FE200033750C;
+			remoteInfo = MainAccountBalanceIntentExtension;
+		};
+		509AC4542D94425E00AA57AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5030A0832D8D9CD6005D67A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5030A08A2D8D9CD6005D67A0;
+			remoteInfo = POCAppIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		502277662D93FE200033750C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				502277652D93FE200033750C /* MainAccountBalanceIntentExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5022775B2D93FE200033750C /* MainAccountBalanceIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MainAccountBalanceIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5022775D2D93FE200033750C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		5030A08B2D8D9CD6005D67A0 /* POCAppIntents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCAppIntents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		509AC4502D94425E00AA57AA /* POCAppIntentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCAppIntentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5022776A2D93FE200033750C /* Exceptions for "MainAccountBalanceIntentExtension" folder in "MainAccountBalanceIntentExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5022775A2D93FE200033750C /* MainAccountBalanceIntentExtension */;
+		};
 		5030A0A22D8DAED2005D67A0 /* Exceptions for "POCAppIntents" folder in "POCAppIntents" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -21,6 +67,14 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5022776A2D93FE200033750C /* Exceptions for "MainAccountBalanceIntentExtension" folder in "MainAccountBalanceIntentExtension" target */,
+			);
+			path = MainAccountBalanceIntentExtension;
+			sourceTree = "<group>";
+		};
 		5030A08D2D8D9CD6005D67A0 /* POCAppIntents */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -29,10 +83,30 @@
 			path = POCAppIntents;
 			sourceTree = "<group>";
 		};
+		509AC4512D94425E00AA57AA /* POCAppIntentsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = POCAppIntentsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		502277582D93FE200033750C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5022775E2D93FE200033750C /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5030A0882D8D9CD6005D67A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509AC44D2D94425E00AA57AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,10 +116,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5022775C2D93FE200033750C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5022775D2D93FE200033750C /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5030A0822D8D9CD6005D67A0 = {
 			isa = PBXGroup;
 			children = (
 				5030A08D2D8D9CD6005D67A0 /* POCAppIntents */,
+				5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */,
+				509AC4512D94425E00AA57AA /* POCAppIntentsTests */,
+				5022775C2D93FE200033750C /* Frameworks */,
 				5030A08C2D8D9CD6005D67A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				5030A08B2D8D9CD6005D67A0 /* POCAppIntents.app */,
+				5022775B2D93FE200033750C /* MainAccountBalanceIntentExtension.appex */,
+				509AC4502D94425E00AA57AA /* POCAppIntentsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +148,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5022775A2D93FE200033750C /* MainAccountBalanceIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502277692D93FE200033750C /* Build configuration list for PBXNativeTarget "MainAccountBalanceIntentExtension" */;
+			buildPhases = (
+				502277572D93FE200033750C /* Sources */,
+				502277582D93FE200033750C /* Frameworks */,
+				502277592D93FE200033750C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */,
+			);
+			name = MainAccountBalanceIntentExtension;
+			packageProductDependencies = (
+			);
+			productName = MainAccountBalanceIntentExtension;
+			productReference = 5022775B2D93FE200033750C /* MainAccountBalanceIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5030A08A2D8D9CD6005D67A0 /* POCAppIntents */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5030A0962D8D9CD7005D67A0 /* Build configuration list for PBXNativeTarget "POCAppIntents" */;
@@ -68,10 +177,12 @@
 				5030A0872D8D9CD6005D67A0 /* Sources */,
 				5030A0882D8D9CD6005D67A0 /* Frameworks */,
 				5030A0892D8D9CD6005D67A0 /* Resources */,
+				502277662D93FE200033750C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				502277642D93FE200033750C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5030A08D2D8D9CD6005D67A0 /* POCAppIntents */,
@@ -83,6 +194,29 @@
 			productReference = 5030A08B2D8D9CD6005D67A0 /* POCAppIntents.app */;
 			productType = "com.apple.product-type.application";
 		};
+		509AC44F2D94425E00AA57AA /* POCAppIntentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509AC4562D94425E00AA57AA /* Build configuration list for PBXNativeTarget "POCAppIntentsTests" */;
+			buildPhases = (
+				509AC44C2D94425E00AA57AA /* Sources */,
+				509AC44D2D94425E00AA57AA /* Frameworks */,
+				509AC44E2D94425E00AA57AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				509AC4552D94425E00AA57AA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				509AC4512D94425E00AA57AA /* POCAppIntentsTests */,
+			);
+			name = POCAppIntentsTests;
+			packageProductDependencies = (
+			);
+			productName = POCAppIntentsTests;
+			productReference = 509AC4502D94425E00AA57AA /* POCAppIntentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,8 +227,15 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					5022775A2D93FE200033750C = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					5030A08A2D8D9CD6005D67A0 = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					509AC44F2D94425E00AA57AA = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 5030A08A2D8D9CD6005D67A0;
 					};
 				};
 			};
@@ -104,6 +245,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 5030A0822D8D9CD6005D67A0;
 			minimizedProjectReferenceProxies = 1;
@@ -113,12 +255,28 @@
 			projectRoot = "";
 			targets = (
 				5030A08A2D8D9CD6005D67A0 /* POCAppIntents */,
+				5022775A2D93FE200033750C /* MainAccountBalanceIntentExtension */,
+				509AC44F2D94425E00AA57AA /* POCAppIntentsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		502277592D93FE200033750C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5030A0892D8D9CD6005D67A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509AC44E2D94425E00AA57AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +286,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		502277572D93FE200033750C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5030A0872D8D9CD6005D67A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		509AC44C2D94425E00AA57AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,7 +309,70 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		502277642D93FE200033750C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5022775A2D93FE200033750C /* MainAccountBalanceIntentExtension */;
+			targetProxy = 502277632D93FE200033750C /* PBXContainerItemProxy */;
+		};
+		509AC4552D94425E00AA57AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5030A08A2D8D9CD6005D67A0 /* POCAppIntents */;
+			targetProxy = 509AC4542D94425E00AA57AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		502277672D93FE200033750C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MainAccountBalanceIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MainAccountBalanceIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.bnpparibas.tech-friday.POCAppIntents.MainAccountBalanceIntentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		502277682D93FE200033750C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MainAccountBalanceIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MainAccountBalanceIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.bnpparibas.tech-friday.POCAppIntents.MainAccountBalanceIntentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5030A0942D8D9CD7005D67A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,9 +552,54 @@
 			};
 			name = Release;
 		};
+		509AC4572D94425E00AA57AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.bnpparibas.tech-friday.POCAppIntentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCAppIntents.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/POCAppIntents";
+			};
+			name = Debug;
+		};
+		509AC4582D94425E00AA57AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.bnpparibas.tech-friday.POCAppIntentsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCAppIntents.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/POCAppIntents";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		502277692D93FE200033750C /* Build configuration list for PBXNativeTarget "MainAccountBalanceIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				502277672D93FE200033750C /* Debug */,
+				502277682D93FE200033750C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5030A0862D8D9CD6005D67A0 /* Build configuration list for PBXProject "POCAppIntents" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -334,6 +614,15 @@
 			buildConfigurations = (
 				5030A0972D8D9CD7005D67A0 /* Debug */,
 				5030A0982D8D9CD7005D67A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509AC4562D94425E00AA57AA /* Build configuration list for PBXNativeTarget "POCAppIntentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509AC4572D94425E00AA57AA /* Debug */,
+				509AC4582D94425E00AA57AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

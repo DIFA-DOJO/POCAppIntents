@@ -12,6 +12,9 @@ struct POCAppIntentsApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+                    print("Appeared!")
+                }
         }
     }
 }
