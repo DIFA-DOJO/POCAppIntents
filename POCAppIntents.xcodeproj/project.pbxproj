@@ -29,43 +29,10 @@
 		50E9B1CF2DA0347E00644572 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5022776A2D93FE200033750C /* Exceptions for "MainAccountBalanceIntentExtension" folder in "MainAccountBalanceIntentExtension" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 5022775A2D93FE200033750C /* MainAccountBalanceIntentExtension */;
-		};
-		5030A0A22D8DAED2005D67A0 /* Exceptions for "POCAppIntents" folder in "POCAppIntents" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 5030A08A2D8D9CD6005D67A0 /* POCAppIntents */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				5022776A2D93FE200033750C /* Exceptions for "MainAccountBalanceIntentExtension" folder in "MainAccountBalanceIntentExtension" target */,
-			);
-			path = MainAccountBalanceIntentExtension;
-			sourceTree = "<group>";
-		};
 		5030A08D2D8D9CD6005D67A0 /* POCAppIntents */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				5030A0A22D8DAED2005D67A0 /* Exceptions for "POCAppIntents" folder in "POCAppIntents" target */,
-			);
 			path = POCAppIntents;
-			sourceTree = "<group>";
-		};
-		509AC4512D94425E00AA57AA /* POCAppIntentsTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = POCAppIntentsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -109,8 +76,6 @@
 			children = (
 				50E9B1CF2DA0347E00644572 /* README */,
 				5030A08D2D8D9CD6005D67A0 /* POCAppIntents */,
-				5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */,
-				509AC4512D94425E00AA57AA /* POCAppIntentsTests */,
 				5022775C2D93FE200033750C /* Frameworks */,
 				5030A08C2D8D9CD6005D67A0 /* Products */,
 			);
@@ -140,9 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */,
 			);
 			name = MainAccountBalanceIntentExtension;
 			packageProductDependencies = (
@@ -185,9 +147,6 @@
 			);
 			dependencies = (
 				509AC4552D94425E00AA57AA /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				509AC4512D94425E00AA57AA /* POCAppIntentsTests */,
 			);
 			name = POCAppIntentsTests;
 			packageProductDependencies = (
@@ -474,13 +433,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = POCAppIntents/POCAppIntentsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = POCAppIntents/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Wero;
 				INFOPLIST_KEY_NSSiriUsageDescription = Tototottot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -507,13 +464,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = POCAppIntents/POCAppIntentsRelease.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZZ8KLLJD4H;
+				DEVELOPMENT_TEAM = MDE3YTL7P4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = POCAppIntents/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Wero;
 				INFOPLIST_KEY_NSSiriUsageDescription = Tototottot;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

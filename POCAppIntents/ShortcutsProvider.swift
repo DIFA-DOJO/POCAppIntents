@@ -35,9 +35,9 @@ class ShortcutsProvider: AppShortcutsProvider {
             intent: AccountBalanceIntent(),
             phrases: [
                 "Afficher mon solde bancaire \(.applicationName)",
-                "Combien j'ai sur mon compte \(.applicationName)",
-                "Combien j'ai sur mon compte chèque ?",
-                "Combien j'ai d'argent sur mon compte chèque ?",
+                "Combien j'ai sur mon compte \(.applicationName) ?",
+                "Combien j'ai sur mon compte chèque  \(.applicationName) ?",
+                "Combien j'ai d'argent sur mon compte chèque \(.applicationName) ?",
                 "Combien j'ai d'argent sur mon compte \(.applicationName) ?",
                 "Quel est mon solde \(.applicationName) ?",
             ],
@@ -46,7 +46,7 @@ class ShortcutsProvider: AppShortcutsProvider {
         )
         
         AppShortcut(
-            intent: WeroTransferIntent(),
+            intent: WeroTransferInAppIntent(),
             phrases: [
                 // ✅
                 "Envoie un \(.applicationName)",
@@ -58,11 +58,13 @@ class ShortcutsProvider: AppShortcutsProvider {
                 "Faire un \(.applicationName)",
                 
                 // ⚠️ Phrases that do not contain the application name are invalid
-                "Transfère 5 cochons à Pascal",
+                // -> Invalid Utterance. Every App Shortcut utterance should have one '${applicationName}' in it.
+                // "Transfère 5 cochons à Pascal",
                 
                 // ⚠️ Phrases that contains parameter (other than application name) does not seem to work
-                "Transfère \(\.$amount) avec \(.applicationName)",
-                "Transfère de l'argent à \(\.$beneficiary) avec \(.applicationName)",
+                // -> Invalid parameter type. AppEntity and AppEnum are the only allowed types for amount
+                // "Transfère \(\.$amount) avec \(.applicationName)",
+                // "Transfère de l'argent à \(\.$beneficiary) avec \(.applicationName)",
             ],
             shortTitle: "Envoie de l'argent avec Wero",
             systemImageName: "creditcard"

@@ -40,19 +40,19 @@ struct Beneficiary: AppEntity {
 struct BeneficiaryQuery: EntityQuery {
     
     static let pascal = Beneficiary(name: "Pascal", accountNumber: "FR7612345678901234567890123")
+    static let jean = Beneficiary(name: "Jean", accountNumber: "FR7612345678901234567890124")
+    static let emilie = Beneficiary(name: "Emilie", accountNumber: "FR7612345678901234567890125")
+    static let marie = Beneficiary(name: "Marie", accountNumber: "FR7612345678901234567890126")
+    static let pierre = Beneficiary(name: "Pierre", accountNumber: "FR7612345678901234567890127")
+    static let paul = Beneficiary(name: "Paul", accountNumber: "FR7612345678901234567890128")
+    static let jacques = Beneficiary(name: "Jacques", accountNumber: "FR7612345678901234567890129")
     
     static let allEntities = [
-        pascal,
-        Beneficiary(name: "Jean", accountNumber: "FR7612345678901234567890124"),
-        Beneficiary(name: "Emilie", accountNumber: "FR7612345678901234567890125"),
-        Beneficiary(name: "Marie", accountNumber: "FR7612345678901234567890126"),
-        Beneficiary(name: "Pierre", accountNumber: "FR7612345678901234567890127"),
-        Beneficiary(name: "Paul", accountNumber: "FR7612345678901234567890128"),
-        Beneficiary(name: "Jacques", accountNumber: "FR7612345678901234567890129"),
+        pascal, jean, emilie, marie, pierre, paul, jacques,
     ]
     
     func suggestedEntities() async throws -> [Beneficiary] {
-        [Self.pascal]
+        Self.allEntities
     }
     
     func entities(for identifiers: [Beneficiary.ID]) async throws -> [Beneficiary] {

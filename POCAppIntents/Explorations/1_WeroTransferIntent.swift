@@ -1,7 +1,7 @@
 import AppIntents
 import SwiftUI
 
-struct WeroTransferIntent: AppIntent {
+struct WeroTransferIntent_OLD: AppIntent {
     
     static var title: LocalizedStringResource = "Envoie d'argent avec Wero"
 
