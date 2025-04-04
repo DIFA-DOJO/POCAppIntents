@@ -20,6 +20,32 @@ class ShortcutsProvider: AppShortcutsProvider {
     
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
+            intent: AccountWeatherIntent(),
+            phrases: [
+                "Afficher la météo du compte \(.applicationName)",
+                "Quelle est la météo de mon compte \(.applicationName)",
+                "Comment se porte mon compte \(.applicationName)",
+                "Quel est le temps sur mon compte \(.applicationName)",
+            ],
+            shortTitle: "Météo bancaire",
+            systemImageName: "sun.max.fill"
+        )
+        
+        AppShortcut(
+            intent: BankAccountBalanceIntent(),
+            phrases: [
+                "Afficher mon solde bancaire \(.applicationName)",
+                "Combien j'ai sur mon compte \(.applicationName)",
+                "Combien j'ai sur mon compte chèque ?",
+                "Combien j'ai d'argent sur mon compte chèque ?",
+                "Combien j'ai d'argent sur mon compte \(.applicationName) ?",
+                "Quel est mon solde \(.applicationName) ?",
+            ],
+            shortTitle: "Solde bancaire",
+            systemImageName: "numbers.rectangle"
+        )
+        
+        AppShortcut(
             intent: WeroTransferIntent(),
             phrases: [
                 // ✅
