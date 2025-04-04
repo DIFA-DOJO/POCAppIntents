@@ -46,7 +46,7 @@ class ShortcutsProvider: AppShortcutsProvider {
         )
         
         AppShortcut(
-            intent: WeroTransferIntent(),
+            intent: WeroTransferInAppIntent(),
             phrases: [
                 // ✅
                 "Envoie un \(.applicationName)",
