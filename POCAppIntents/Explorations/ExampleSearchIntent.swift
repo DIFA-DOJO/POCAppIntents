@@ -1,11 +1,3 @@
-//
-//  ExampleSearchIntent.swift
-//  POCAppIntents
-//
-//  Created by f19876 on 04/04/2025.
-//
-
-
 //@AssistantIntent(schema: .system.search)
 //struct ExampleSearchIntent: ShowInAppSearchResultsIntent {
 //    static var searchScopes: [StringSearchScope] = [.general]

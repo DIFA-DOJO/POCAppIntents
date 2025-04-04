@@ -1,9 +1,3 @@
-//
-//  Currency.swift
-//  POCAppIntents
-//
-//  Created by f19876 on 04/04/2025.
-//
 import AppIntents
 
 enum Currency: String, AppEnum {

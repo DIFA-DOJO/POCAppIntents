@@ -9,11 +9,26 @@ struct WeroTransferIntent: AppIntent {
     
     static var openAppWhenRun: Bool = false
     
-    @Parameter(title: "Montant")
+    @Parameter(
+        title: "Montant",
+        requestValueDialog: IntentDialog(
+            full: "Combien d'argent voulez-vous envoyer?",
+            systemImageName: "dollarsign.circle.fill"
+        )
+    )
     var amount: Double
     
     @Parameter(title: "Devise", default: .euro)
     var currency: Currency
+    
+    @Parameter(
+        title: "Bénéficiaire",
+        requestValueDialog: IntentDialog(
+            full: "A qui voulez-vous envoyer de l'argent?",
+            systemImageName: "person.circle.fill"
+        )
+    )
+    var beneficiary: Beneficiary
     
     @MainActor
     func perform() async throws -> some IntentResult & ProvidesDialog & ShowsSnippetView {
@@ -23,11 +38,14 @@ struct WeroTransferIntent: AppIntent {
                 full: "Yeah!",
                 
                 // ⬇️ This is displayed by the interface
-                supporting: "\(amount.formatted(.currency(code: currency.code))) sent to a random person…",
+                supporting: "\(amount.formatted(.currency(code: currency.code))) envoyés à \(beneficiary)…",
                 systemImageName: "dollarsign.circle.fill"
             ),
-            view: Text("💸💸💸").font(.largeTitle)
-        )
+            content: {
+                Text("💸💸💸")
+                    .font(.largeTitle)
+                    .padding()
+            })
     }
 }
 

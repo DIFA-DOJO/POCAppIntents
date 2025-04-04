@@ -1,10 +1,3 @@
-//
-//  POCAppIntentsApp.swift
-//  POCAppIntents
-//
-//  Created by f19876 on 21/03/2025.
-//
-
 import SwiftUI
 import Intents
 

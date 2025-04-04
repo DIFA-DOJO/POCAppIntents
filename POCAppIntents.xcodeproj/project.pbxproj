@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5022775E2D93FE200033750C /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5022775D2D93FE200033750C /* Intents.framework */; };
+		50E9B1D02DA0347E00644572 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 50E9B1CF2DA0347E00644572 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		5022775D2D93FE200033750C /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		5030A08B2D8D9CD6005D67A0 /* POCAppIntents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCAppIntents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		509AC4502D94425E00AA57AA /* POCAppIntentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCAppIntentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E9B1CF2DA0347E00644572 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -105,6 +107,7 @@
 		5030A0822D8D9CD6005D67A0 = {
 			isa = PBXGroup;
 			children = (
+				50E9B1CF2DA0347E00644572 /* README */,
 				5030A08D2D8D9CD6005D67A0 /* POCAppIntents */,
 				5022775F2D93FE200033750C /* MainAccountBalanceIntentExtension */,
 				509AC4512D94425E00AA57AA /* POCAppIntentsTests */,
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50E9B1D02DA0347E00644572 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
